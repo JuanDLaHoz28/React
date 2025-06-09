@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/React/mi-app/static/css/main.c8a39616.css",
+    "main.js": "/React/mi-app/static/js/main.e127f40d.js",
+    "static/media/iñaki.jpg": "/React/mi-app/static/media/iñaki.1573d130549e1d4b4936.jpg",
+    "static/media/reynoldsrya.jpg": "/React/mi-app/static/media/reynoldsrya.fe177156edc61ce6aaed.jpg",
+    "static/media/emily.jpg": "/React/mi-app/static/media/emily.4ef40d6f67ba72af5f53.jpg",
+    "index.html": "/React/mi-app/index.html",
+    "main.c8a39616.css.map": "/React/mi-app/static/css/main.c8a39616.css.map",
+    "main.e127f40d.js.map": "/React/mi-app/static/js/main.e127f40d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8a39616.css",
+    "static/js/main.e127f40d.js"
+  ]
+}
