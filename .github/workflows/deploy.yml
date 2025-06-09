@@ -1,0 +1,32 @@
+name: Deploy React app to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: ./mi-app
+        run: npm install
+
+      - name: Build
+        working-directory: ./mi-app
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        working-directory: ./mi-app
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx gh-pages -d build --repo=https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/JuanDLaHoz28/React.git --branch=gh-pages --message="Deploy to GitHub Pages"
